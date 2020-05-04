@@ -1,0 +1,17 @@
+.fancyButton{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    background-color: cadetblue;
+    font-size: 14px;
+    border-radius: 8px 8px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.fancyButton:hover{
+    background-color: greenyellow;
+    box-shadow: 2px 2px 5px hotpink;
+}
+.fancyButton:active{
+    background-color: hotpink;
+}

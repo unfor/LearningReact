@@ -1,0 +1,61 @@
+.mainTab{
+    height: 620px;
+    width: 100%;
+    background-color: beige;
+    position: relative;
+}
+.sideTab{
+    height: 620px;
+    width: 20%;
+    display: inline-block;
+    background-color: burlywood;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul{
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    border: 3px solid #000;
+    padding: 1rem 2rem;
+    min-height: 200px;
+    margin: 15px 2rem 0 0;
+    background: #323232;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+li {
+    padding: 0.3rem 0;
+}
+  
+/* li::before {
+    content: "== ";
+    color: aqua;
+} */
+
+li.completed::before {
+    content: "== ";
+    text-decoration: none;
+    color: greenyellow;
+}
+
+/* li.completed {
+    text-decoration: line-through;
+    color: #bdbdbd;
+} */
+
+.rightTab{
+    height: 620px;
+    width: 80%;
+    display: inline-block;
+    background-color: darkgray;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+        
