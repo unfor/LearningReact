@@ -2,6 +2,7 @@ import React from 'react';
 import './main.css';
 // const App = require('./App.js');
 import CssMain from './cssMain'
+import ReduxMain from './reduxMain';
 class MainTab extends React.Component{
     constructor(p){
         super(p);
@@ -19,6 +20,10 @@ class MainTab extends React.Component{
             case '面试官：你可以用纯 CSS 判断鼠标进入的方向吗？': 
                 // window.location.href = "file:///C:/project/new/react/my-app/src/001.html"
             break;
+            case 'redux':
+                this.setState({
+                    mainTab: <ReduxMain></ReduxMain>
+                })
         }
     }
     render(){
@@ -29,7 +34,7 @@ class MainTab extends React.Component{
                     <li className="completed" onClick={()=>this.chooseTab('css')}>{"css页"}</li>
                     <li className="completed" onClick={()=>this.chooseTab('js')}>{"js页"}</li>
                     <li className="completed" onClick={()=>{this.chooseTab('面试官：你可以用纯 CSS 判断鼠标进入的方向吗？')}}>{"面试官：你可以用纯 CSS 判断鼠标进入的方向吗？"}</li>
-                    <li></li>
+                    <li className="completed" onClick={()=>{this.chooseTab('redux')}}>{"redux"}</li>
                 </ul>
             </div>
             <div className="rightTab">
